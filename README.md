@@ -1,7 +1,8 @@
 #  GOLDEN-AGE-OF-VIDEO-GAMES
  
 ## SQL Data Exploration using SQL(Postgresql)
-![picture of video game](video_pic2.jpg)
+![picture of video game](vid_game.jpg)
+
 # Background to the Report
 - Video games are big business: the global gaming market is projected to be worth more than $300 billion by 2027 according to Mordor Intelligence. 
 With so much money at stake, the major game publishers are hugely incentivized to create the next big hit. 
@@ -18,8 +19,9 @@ but you can find the complete dataset with over 13,000 games on Kaggle.
 ![review table](Pic_2.jpg)
 ---
 ### SQL Queries - top ten best-selling games 
-Select all information for the top ten best-selling games
-Order the results from best-selling game down to tenth best-selling
+
+- Select all information for the top ten best-selling games 
+- Order the results from best-selling game down to tenth best-selling
 ---
 SELECT * \
 **FROM game_sales** \
@@ -31,9 +33,10 @@ SELECT * \
 ---
 ### SQL Queries – MISSING REVIEW SCORES 
 
-Wow, the best-selling video games were released between 1985 to 2017! That's quite a range; we'll have to use data from the reviews table to gain more insight on the best years for video games.
-
-First, it's important to explore the limitations of our database. One big shortcoming is that there is not any reviews data for some of the games on the game_sales table.
+- Wow, the best-selling video games were released between 1985 to 2017! 
+- That's quite a range; we'll have to use data from the reviews table to gain more insight on the best years for video games.
+- First, it's important to explore the limitations of our database. 
+One big shortcoming is that there is not any reviews data for some of the games on the game_sales table.
 ---
 ### SQL Queries –  MISSING REVIEW SCORES 
 Join games_sales and reviews\
@@ -82,8 +85,7 @@ Maybe there weren't a lot of video games in our dataset that were released in ce
 
 - Let's update our query and find out whether 1982 really was such a great year for video games.
 ## SQL Queries - WAS 1982 REALLY THAT GREAT? 
-Paste your query from the previous task; update it to add a count of games released in each year called num_game\s
-Update the query so that it only returns years that have more than four reviewed games
+ 
 ---
 **SELECT year, ROUND(AVG(critic_score),2) AS avg_critic_score**,\
 **COUNT(game_sales.game) AS num_games**\
