@@ -1,4 +1,4 @@
-#  GOLDEN-AGE-OF-VIDEO-GAMES
+#  GOLDEN-AGE-OF-VIDEO-GAMES❤
  
 ## SQL Data Exploration using SQL(Postgresql)
 ![picture of video game](vid_game.jpg)
