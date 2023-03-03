@@ -195,5 +195,6 @@ We know that critics and players liked these years, but what about video game ma
 **GROUP BY year**\
 **ORDER BY total_games_sold DESC** 
 
-![](sales_video_games.jpg) 
+![picture of sales table](sales_video_games.jpg) 
  
+ ![thank you picture](thank_you.jpg)
