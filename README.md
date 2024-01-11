@@ -22,9 +22,9 @@ but you can find the complete dataset with over 13,000 games on Kaggle.
 
 - Select all information for the top ten best-selling games 
 - Order the results from best-selling game down to tenth best-selling
-- SELECT *
-- FROM GAME_SALES
-- ORDER BY GAMES_SOLD
+- SELECT * \
+- FROM GAME_SALES \
+- ORDER BY GAMES_SOLD \
 ---
 SELECT * \
 **FROM game_sales** \
